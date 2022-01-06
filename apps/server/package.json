@@ -1,0 +1,27 @@
+{
+  "name": "@tpoc/server",
+  "version": "1.0.0",
+  "description": "turbo repo poc server",
+  "main": "index.js",
+  "author": "Danilo Assis",
+  "license": "MIT",
+  "scripts": {
+    "es": "node -r esbuild-register",
+    "dev": "yarn es ./src/index.ts"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.10",
+    "esbuild-register": "^3.3.1"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^10.1.1",
+    "graphql": "^16.2.0",
+    "graphql-helix": "^1.11.0",
+    "graphql-playground-middleware": "^1.1.2",
+    "graphql-relay": "^0.10.0",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-logger": "^3.2.1"
+  }
+}
